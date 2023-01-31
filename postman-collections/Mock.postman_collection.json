@@ -1,0 +1,1085 @@
+{
+	"info": {
+		"_postman_id": "58d93847-1918-4165-add3-c99f50ddd972",
+		"name": "Mock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2116758"
+	},
+	"item": [
+		{
+			"name": "Price and availability",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/apartmentstatus/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"apartmentstatus",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "{{url}}/apartmentstatus/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentstatus/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentstatus",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jan 2023 22:45:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=4d2a6a2e61c8e64c"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=197c830f04a73a1a"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1675032400"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\":\"1\",\n    \"price\":\"300\",\n    \"available\":true\n}"
+				},
+				{
+					"name": "{{url}}/apartmentstatus/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentstatus/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentstatus",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jan 2023 22:45:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=4d2a6a2e61c8e64c"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=197c830f04a73a1a"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1675032400"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\":\"2\",\n    \"price\":\"400\",\n    \"available\":false\n}"
+				},
+				{
+					"name": "{{url}}/apartmentstatus/3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentstatus/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentstatus",
+								"3"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jan 2023 22:45:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=4d2a6a2e61c8e64c"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=197c830f04a73a1a"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1675032400"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\":\"unit not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Amenities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/apartmentamenities/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"apartmentamenities",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "{{url}}/apartmentamenities/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentamenities/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentamenities",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jan 2023 22:45:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=4d2a6a2e61c8e64c"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=197c830f04a73a1a"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1675032400"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\":\"1\",\n    \"Internet\":true,\n    \"Heating\":false\n}"
+				},
+				{
+					"name": "{{url}}/apartmentamenities/2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentamenities/2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentamenities",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jan 2023 22:45:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=4d2a6a2e61c8e64c"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=197c830f04a73a1a"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1675032400"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\":\"1\",\n    \"Internet\":false,\n    \"Heating\":true\n}"
+				},
+				{
+					"name": "{{url}}/apartmentamenities/3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentamenities/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentamenities",
+								"3"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jan 2023 22:45:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=4d2a6a2e61c8e64c"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=197c830f04a73a1a"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1675032400"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\":\"unit not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add extra costs",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/apartments/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"apartments",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentmanger/apartments/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentmanger",
+								"apartments",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jan 2023 22:45:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=4d2a6a2e61c8e64c"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=197c830f04a73a1a"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1675032400"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"extra costs added\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Change apartment status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/apartmentmanger/apartmentstatus/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"apartmentmanger",
+						"apartmentstatus",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "{{url}}/apartmentmanger/apartmentstatus/1",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentmanger/apartmentstatus/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentmanger",
+								"apartmentstatus",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Sun, 29 Jan 2023 22:45:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "150"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "x-srv-trace",
+							"value": "v=1;t=4d2a6a2e61c8e64c"
+						},
+						{
+							"key": "x-srv-span",
+							"value": "v=1;s=197c830f04a73a1a"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "120"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "118"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1675032400"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"96-S/5iQ2y1qqIInh5BwoPc+chvDJU\""
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"apartment status updated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "List apartment within a certain date",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/apartments",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"apartments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "example0",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartments?startdate=21032023&days=2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartments"
+							],
+							"query": [
+								{
+									"key": "startdate",
+									"value": "21032023"
+								},
+								{
+									"key": "days",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"no unit in this time, try a different time\"\n}"
+				},
+				{
+					"name": "example1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartments?startdate=20022023&days=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartments"
+							],
+							"query": [
+								{
+									"key": "startdate",
+									"value": "20022023"
+								},
+								{
+									"key": "days",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1\",\n        \"price\": \"300\",\n        \"available\": true,\n        \"rating\": \"4\",\n        \"amenities\": [\n            \"Internet\",\n            \"Heating\",\n            \"Telephone\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\",\n            \"discount\"\n        ]\n    },\n    {\n        \"id\": \"2\",\n        \"price\": \"400\",\n        \"available\": true,\n        \"rating\": \"3\",\n        \"amenities\": [\n            \"Dishwasher\",\n            \"Heating\",\n            \"Toaster\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\"\n        ]\n    }\n]"
+				},
+				{
+					"name": "example2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartments?startdate=20022023&days=7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartments"
+							],
+							"query": [
+								{
+									"key": "startdate",
+									"value": "20022023"
+								},
+								{
+									"key": "days",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"4\",\n        \"price\": \"300\",\n        \"available\": true,\n        \"rating\": \"4\",\n        \"amenities\": [\n            \"Internet\",\n            \"Heating\",\n            \"Telephone\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\",\n            \"discount\"\n        ]\n    },\n    {\n        \"id\": \"5\",\n        \"price\": \"400\",\n        \"available\": true,\n        \"rating\": \"3\",\n        \"amenities\": [\n            \"Dishwasher\",\n            \"Heating\",\n            \"Toaster\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\"\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Booking apartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startdate\":\"20022023\",\n    \"days\":\"3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/apartments/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"apartments",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"startdate\":\"2002203\",\n    \"days\":\"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/apartments/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartments",
+								"1"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\" : true,\n\"message\":\"apartment booked\"}"
+				},
+				{
+					"name": "Failure",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"startdate\":\"2002203\",\n    \"days\":\"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/apartments/7",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartments",
+								"7"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\"success\" : false,\n\"message\":\"apartment not booked\"}"
+				}
+			]
+		},
+		{
+			"name": "Load aparments to aparmtent app",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": \"1\",\n        \"price\": \"300\",\n        \"available\": true,\n        \"rating\": \"4\",\n        \"amenities\": [\n            \"Internet\",\n            \"Heating\",\n            \"Telephone\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\",\n            \"discount\"\n        ]\n    },\n    {\n        \"id\": \"2\",\n        \"price\": \"400\",\n        \"available\": true,\n        \"rating\": \"3\",\n        \"amenities\": [\n            \"Dishwasher\",\n            \"Heating\",\n            \"Toaster\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\"\n        ]\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/apartmentmanger/apartments",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"apartmentmanger",
+						"apartments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-mock-response-name",
+								"value": "example0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": \"1\",\n        \"price\": \"300\",\n        \"available\": true,\n        \"rating\": \"4\",\n        \"amenities\": [\n            \"Internet\",\n            \"Heating\",\n            \"Telephone\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\",\n            \"discount\"\n        ]\n    },\n    {\n        \"id\": \"2\",\n        \"price\": \"400\",\n        \"available\": true,\n        \"rating\": \"3\",\n        \"amenities\": [\n            \"Dishwasher\",\n            \"Heating\",\n            \"Toaster\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\"\n        ]\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/apartmentmanger/apartments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentmanger",
+								"apartments"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"apartments loaded to apartment app\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Load apparments to mapper",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": \"1\",\n        \"price\": \"300\",\n        \"available\": true,\n        \"rating\": \"4\",\n        \"amenities\": [\n            \"Internet\",\n            \"Heating\",\n            \"Telephone\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\",\n            \"discount\"\n        ]\n    },\n    {\n        \"id\": \"2\",\n        \"price\": \"400\",\n        \"available\": true,\n        \"rating\": \"3\",\n        \"amenities\": [\n            \"Dishwasher\",\n            \"Heating\",\n            \"Toaster\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\"\n        ]\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/importer/apartments",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"importer",
+						"apartments"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-mock-response-name",
+								"value": "example0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": \"1\",\n        \"price\": \"300\",\n        \"available\": true,\n        \"rating\": 4,\n        \"Internet\": true,\n        \"Heating\": true,\n        \"Telephone\": true,\n        \"free cancelation\":true,\n        \"discount\":\"true\"\n    },\n    {\n        \"id\": \"2\",\n        \"price\": \"400\",\n        \"available\": true,\n        \"rating\": 3,\n        \"Dishwasher\": true,\n        \"Heating\": true,\n        \"Toaster\": true,\n        \"free cancelation\":true\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/importer/apartments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"importer",
+								"apartments"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "",
+							"type": "text"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1\",\n        \"price\": 300,\n        \"available\": true,\n        \"rating\": 4,\n        \"Internet\": true,\n        \"Heating\": true,\n        \"Telephone\": true,\n        \"free cancelation\":true,\n        \"discount\":\"true\"\n    },\n    {\n        \"id\": \"2\",\n        \"price\": 400,\n        \"available\": true,\n        \"rating\": 3,\n        \"Dishwasher\": true,\n        \"Heating\": true,\n        \"Toaster\": true,\n        \"free cancelation\":true\n    }\n]"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://8ca46caf-f1d0-4faa-a1c2-7036fa9f044f.mock.pstmn.io"
+		}
+	]
+}

@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "ed25dccb-8899-4324-9b66-d0ebf35d9f7b",
+		"name": "Inventory managment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2116758"
+	},
+	"item": [
+		{
+			"name": "ProviderStatusService",
+			"item": [
+				{
+					"name": "Get Price and availability",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentstatus/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentstatus",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ProviderAmenitiesService",
+			"item": [
+				{
+					"name": "Get Amenities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartmentamenities/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentamenities",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Backend",
+			"item": [
+				{
+					"name": "List available for a certain date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/apartments?startdate=20022023&days=3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartments"
+							],
+							"query": [
+								{
+									"key": "startdate",
+									"value": "20022023"
+								},
+								{
+									"key": "days",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Book apartment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"userid\": \"1\",\n      \"discount\":true,\n      \"startdate\":\"2002203\",\n      \"days\":\"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/apartments/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Apartment app",
+			"item": [
+				{
+					"name": "Add extra costs",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"charge\":\"10 USD\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/apartmentmanger/apartments/:id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentmanger",
+								"apartments",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change apartment status",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"available\":\"false\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/apartmentmanger/apartmentstatus/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentmanger",
+								"apartmentstatus",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pass apartments to Apartment app",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": \"1\",\n        \"price\": \"300\",\n        \"available\": true,\n        \"rating\": \"4\",\n        \"amenities\": [\n            \"Internet\",\n            \"Heating\",\n            \"Telephone\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\",\n            \"discount\"\n        ]\n    },\n    {\n        \"id\": \"2\",\n        \"price\": \"400\",\n        \"available\": true,\n        \"rating\": \"3\",\n        \"amenities\": [\n            \"Dishwasher\",\n            \"Heating\",\n            \"Toaster\"\n        ],\n        \"paymentoptions\": [\n            \"free cancelation\"\n        ]\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/apartmentmanger/apartments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"apartmentmanger",
+								"apartments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Importer",
+			"item": [
+				{
+					"name": "Pass apartments to Importer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"id\": \"1\",\n        \"price\": \"300\",\n        \"available\": true,\n        \"rating\": \"4\",\n        \"Internet\": true,\n        \"Heating\": true,\n        \"Telephone\": true,\n        \"free cancelation\":true,\n        \"discount\":\"true\"\n    },\n    {\n        \"id\": \"2\",\n        \"price\": \"400\",\n        \"available\": true,\n        \"rating\": \"3\",\n        \"Dishwasher\": true,\n        \"Heating\": true,\n        \"Toaster\": true,\n        \"free cancelation\":true\n    },\n    {\n        \"id\": \"3\",\n        \"price\": \"0\",\n        \"available\": true,\n        \"rating\": \"-1\",\n        \"Dishwasher\": true,\n        \"Heating\": true,\n        \"Toaster\": true,\n        \"free cancelation\":true\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/importer/apartments",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"importer",
+								"apartments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
